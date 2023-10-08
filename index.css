@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 60px;
+    background-color: black;
+    border-bottom: 1px solid rgb(56, 54, 54);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header td {
+    text-align: center;
+    width: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header td::after {
+    content: "";
+    position: absolute;
+    transition: .2s ease;
+    width: 98px;
+    height: 2px;
+    background-color: transparent;
+    left: 51px;
+    top: 20px;
+}
+
+.header td:hover::after {
+    background-color: white;
+}
+
+.header span {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+}
+
+.information {
+    padding-top: 40px;
+}
+
+.information__about {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.information__actors {
+    font-size: 16px;
+    font-weight: normal;
+} 
+
+.information__actorsList {
+    margin-top: 4px;
+}
+
+.information__actorsList li {
+    font-size: 14px;
+}
+
+.information__aboutEnvironment {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.information__environment {
+    transform: translateX(15%);
+}
+
+.story {
+    margin-top:100px;
+}
+
+.story__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.story__name {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pers {
+    color: grey;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.persSomething {
+    font-size: 13px;
+    color: grey;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.text {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.nonPers {
+    font-size: 11px;
+    color: grey;
+    font-style: italic;
+}
+
+.story__end {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.footer {
+    border-top: 1px solid rgb(56, 54, 54);
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    gap: 20px;
+}
+
+.footer a {
+    color: white;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
